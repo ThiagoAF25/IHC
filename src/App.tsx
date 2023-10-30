@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
+
+import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from "@emotion/react";
+
+const theme = createTheme({
+    palette: {
+        primary: {
+            main: '#e14177',
+            // light: will be calculated from palette.primary.main,
+            // dark: will be calculated from palette.primary.main,
+            // contrastText: will be calculated to contrast with palette.primary.main
+        },
+        secondary: {
+            main: '#01427a',
+            light: '#01b3ef',
+            // dark: will be calculated from palette.secondary.main,
+            contrastText: '#FFFFFF',
+        },
+
+    },
+    typography: {
+        button: { // Here is where you can customise the button
+            fontSize: 16,
+            fontWeight: 700,
+        },
+    },
+});
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <ThemeProvider theme={theme}>
+            <RouterProvider router={router} />
+        </ThemeProvider >
+    );
 }
 
 export default App;
