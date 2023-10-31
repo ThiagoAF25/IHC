@@ -1,0 +1,13 @@
+.configDiv {
+    background: #01427a;
+    height: 100vh;
+    width: 100%;
+}
+
+.containerConfig {
+    width: 75%;
+    background: #01b3ef;
+    height: 80%;
+    border-radius: 10px;
+    margin: 0 auto;
+}

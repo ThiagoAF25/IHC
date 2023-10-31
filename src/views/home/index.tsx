@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from '@mui/material';
 import { Logo } from './Components/Logo'
 import { Link } from 'react-router-dom';
-import './home.css'
+import './style.css'
 
 export const Home = () => {
     return (
@@ -28,7 +28,7 @@ export const Home = () => {
                     </Button>
                 </Box>
             </Box>
-            <Box className="bottomBar">
+            <Box className="Footer">
             </Box>
         </div>
     )
