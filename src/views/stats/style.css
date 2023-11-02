@@ -1,0 +1,13 @@
+.statsDiv {
+    background: #37323e;
+    height: 100vh;
+    width: 100%;
+}
+
+.containerStats {
+    width: 75%;
+    background: #de9e36;
+    height: 80%;
+    border-radius: 10px;
+    margin: 0 auto;
+}

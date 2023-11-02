@@ -1,13 +1,16 @@
 .configDiv {
-    background: #01427a;
+    background: #6d6a75;
     height: 100vh;
     width: 100%;
 }
 
 .containerConfig {
     width: 75%;
-    background: #01b3ef;
+    background: #bfbdc1;
     height: 80%;
-    border-radius: 10px;
+    border-radius: 40px;
     margin: 0 auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #37323e;
 }

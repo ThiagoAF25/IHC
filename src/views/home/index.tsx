@@ -23,7 +23,7 @@ export const Home = () => {
                     <Button component={Link} to="/config" variant="contained" color="primary" className="button" style={{ marginBottom: "32px" }}>
                         Configurações
                     </Button>
-                    <Button variant="contained" color="primary" className="button" >
+                    <Button component={Link} to="/stats"  variant="contained" color="primary" className="button" >
                         Estatísticas
                     </Button>
                 </Box>
