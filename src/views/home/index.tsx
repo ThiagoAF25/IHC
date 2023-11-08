@@ -10,6 +10,7 @@ export const Home = () => {
                 <Logo/>
             </Box>
             <Box className="container">
+
                 <Box className="Text">
                     <Typography variant="h5" color="white" fontFamily="Arial">Um jogo educativo a fim de concientizar todos os públicos sobre a segurança na Internet.</Typography>
                 </Box>
