@@ -5,11 +5,14 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 
-export default function SelectFont() {
-  const [font, setfont] = React.useState('');
+interface SelectFontProps {
+  value: string;  // Keep it as a string
+  onChange: (value: string) => void;
+}
 
+const SelectFont: React.FC<SelectFontProps> = ({ value, onChange }) => {
   const handleChange = (event: SelectChangeEvent) => {
-    setfont(event.target.value as string);
+    onChange(event.target.value as string);
   };
 
   return (
@@ -19,7 +22,7 @@ export default function SelectFont() {
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
-          value={font}
+          value={value}
           label="Escolher fonte"
           onChange={handleChange}
         >
@@ -32,3 +35,4 @@ export default function SelectFont() {
     </Box>
   );
 }
+export default SelectFont;
