@@ -1,7 +1,7 @@
 import { Box, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import './style.css';
-
+import { fontVar, sizeVar } from '../../App';
 
 export const Stats = () => {
     return (
