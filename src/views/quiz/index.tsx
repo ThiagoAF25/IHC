@@ -1,30 +1,61 @@
+import React, { useState } from 'react';
 import { Box, Button, Typography} from '@mui/material';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './style.css'
-import { fontVar, sizeVar } from '../../App';
+import { fontVar, sizeVar, quizVar, setQuizVar } from '../../App';
+import { questoes, QuizA, QuizB, QuizC, QuizD} from "./questoes"
 
+
+export let resp: string = '';
+export let indice: number = 0;
 export const Quiz = () => {
+    const navigate = useNavigate();
+
+    const handleResposta = () => {
+        setQuizVar(quizVar + 1);
+        
+        navigate('/quiz/feedback');
+    };
+
+    function numeroAleatorio(questoes: string[]){
+        let indice = Math.floor(Math.random()*questoes.length);
+        return indice;
+    };
+
+    indice = numeroAleatorio(questoes);
     return (
         <div className="quizDiv">
             <Button component={Link} to="/home" variant="contained" color="primary" style={{ marginTop: "5px", marginLeft: "5px"}}>
                 Voltar
             </Button>
             <Box className="containerQuiz">
-                <Box className="perguntaQuiz">
-                    <Typography fontSize={sizeVar*1.5}  color="white" fontFamily={fontVar}>Plasmoid dentro do anão.</Typography>
+                <Box className="perguntaQuiz" style={{ marginTop: "15px", marginLeft: "10px"}}>
+                    <Typography fontSize={sizeVar*1.5}  color="white" fontFamily={fontVar}>{questoes[indice]}.</Typography>
                 </Box>
                 <Box className="buttonQuiz">
-                    <Button component={Link} to="/quiz" variant="contained" color="primary" className="button" style={{ fontFamily: fontVar, fontSize:sizeVar, marginBottom: "32px" }}>
-                        A
+                    <Button onClick={() => {
+                        resp = "A";
+                        handleResposta();
+                    }}  variant="contained" color="primary" className="button" style={{ fontFamily: fontVar, fontSize:sizeVar, marginBottom: "32px" }}>
+                        {QuizA[indice]}
                     </Button>
-                    <Button variant="contained" color="primary" className="button" style={{fontFamily: fontVar, fontSize:sizeVar, marginBottom: "32px" }}>
-                        E
+                    <Button onClick={() => {
+                        resp = "B";
+                        handleResposta();
+                    }} variant="contained" color="primary" className="button" style={{fontFamily: fontVar, fontSize:sizeVar, marginBottom: "32px" }}>
+                        {QuizB[indice]}
                     </Button>
-                    <Button component={Link} to="/quiz" variant="contained" color="primary" className="button" style={{ fontFamily: fontVar, fontSize:sizeVar, marginBottom: "32px" }}>
-                        D
+                    <Button onClick={() => {
+                        resp = "C";
+                        handleResposta();
+                    }}  variant="contained" color="primary" className="button" style={{ fontFamily: fontVar, fontSize:sizeVar, marginBottom: "32px" }}>
+                        {QuizC[indice]}
                     </Button>
-                    <Button variant="contained" color="primary" className="button" style={{fontFamily: fontVar, fontSize:sizeVar, marginBottom: "32px" }}>
-                        C
+                    <Button onClick={() => {
+                        resp = "D";
+                        handleResposta();
+                    }}  variant="contained" color="primary" className="button" style={{fontFamily: fontVar, fontSize:sizeVar, marginBottom: "32px" }}>
+                        {QuizD[indice]}
                     </Button>
                 </Box>                    
             </Box>

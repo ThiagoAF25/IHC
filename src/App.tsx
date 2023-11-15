@@ -5,7 +5,12 @@ import { ThemeProvider } from "@emotion/react";
 
 
 export let sizeVar: number = 16;
+export let quizVar: number = 0;
 export let fontVar: string = 'Arial';
+
+export function setQuizVar(newNum: number): void {
+  quizVar = newNum;
+}
 
 export function setSize(newSize: number): void {
   sizeVar = newSize;
