@@ -5,7 +5,7 @@ import SelectFontSize from './Components/SelectFontSize';
 import SelectFont from './Components/SelectFont';
 import InputSlider from './Components/Slider';
 import './style.css';
-import { fontVar, sizeVar, setSize, setFont } from '../../App';
+import { fontVar, sizeVar, setSize, setFont} from '../../App';
 
 export const Config = () => {
   const [fontSize, setFontSize] = useState<number>(16);
@@ -13,7 +13,7 @@ export const Config = () => {
   const [sliderValue, setSliderValue] = useState<number>(50);
 
   const handleRestoreDefault = () => {
-    setSize(16);
+    setSize(18);
     setFont('Arial');
     setSliderValue(50);
   };
@@ -25,7 +25,7 @@ export const Config = () => {
 
   return (
     <div className="configDiv">
-      <Button component={Link} to="/home" variant="contained" color="primary" style={{ marginTop: "5px", marginLeft: "5px" }}>
+      <Button component={Link} to="/home" variant="contained" color="primary" style={{fontFamily: fontVar, fontSize:sizeVar, marginTop: "5px", marginLeft: "5px" }}>
         Voltar
       </Button>
       <Box className="containerConfig">

@@ -26,9 +26,9 @@ const SelectFontSize: React.FC<SelectFontSizeProps> = ({ value, onChange }) => {
           label="Tamanho da fonte"
           onChange={handleChange}
         >
-          <MenuItem value={16}>Pequeno</MenuItem>
-          <MenuItem value={20}>Médio</MenuItem>
-          <MenuItem value={24}>Grande</MenuItem>
+          <MenuItem value={14}>Pequeno</MenuItem>
+          <MenuItem value={18}>Médio</MenuItem>
+          <MenuItem value={22}>Grande</MenuItem>
         </Select>
       </FormControl>
     </Box>

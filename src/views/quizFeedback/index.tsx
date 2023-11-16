@@ -11,7 +11,7 @@ export const QuizFeedback = () => {
     console.log(resp);
     return (
         <div className="quizDiv">
-            <Button component={Link} to="/home" variant="contained" color="primary" style={{ marginTop: "5px", marginLeft: "5px"}}>
+            <Button component={Link} to="/home" variant="contained" color="primary" style={{fontFamily: fontVar, fontSize:sizeVar, marginTop: "5px", marginLeft: "5px"}}>
                 Voltar
             </Button>
             <Box className="containerQuiz">
