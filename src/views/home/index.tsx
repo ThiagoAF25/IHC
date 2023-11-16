@@ -1,5 +1,4 @@
 import { Box, Button, Typography } from '@mui/material';
-import { Logo } from './Components/Logo'
 import { Link } from 'react-router-dom';
 import './style.css'
 import { fontVar, sizeVar, quizVar, setQuizVar } from '../../App';
@@ -10,7 +9,8 @@ export const Home = () => {
     return (
         <div className="home">
             <Box className="appBar">
-                <Logo/>
+                <img src="logo.png" alt="logo" height="75px"
+                width="300px" style={{marginTop: "50px", marginLeft: "50px"}}/>
             </Box>
             <Box className="container">
                 <Box className="Text">
