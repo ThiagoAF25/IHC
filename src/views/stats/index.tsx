@@ -1,7 +1,6 @@
 import { Box, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import './style.css';
-import { fontVar, sizeVar } from '../../App';
 
 export const Stats = () => {
     return (
@@ -10,8 +9,8 @@ export const Stats = () => {
                 Voltar
             </Button>
             <Box className="containerStats">
-                /*<Box sx={{display: 'inline-flex',flexDirection: 'row', flexWrap: 'wrap'}}>
-                </Box>*/
+                <Box sx={{display: 'inline-flex',flexDirection: 'row', flexWrap: 'wrap'}}>
+                </Box>
             </Box>
         </div>
     )

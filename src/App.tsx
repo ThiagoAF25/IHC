@@ -7,6 +7,15 @@ import { ThemeProvider } from "@emotion/react";
 export let sizeVar: number = 16;
 export let quizVar: number = 0;
 export let fontVar: string = 'Arial';
+export let histQuest:number = 0;
+
+export function ResetHistQuest(): void {
+  histQuest = 0;
+}
+
+export function setHistQuest(newNum: number): void{
+  histQuest = newNum;
+}
 
 export function setQuizVar(newNum: number): void {
   quizVar = newNum;

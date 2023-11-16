@@ -6,7 +6,7 @@ import { Stats } from "../views/stats";
 import { Quiz } from "../views/quiz";
 import { QuizFeedback } from "../views/quizFeedback";
 import { Hist } from "../views/hist"
-
+import { HistFeedback } from "../views/histFeedback"
 export const router = createBrowserRouter([
     {
         path:"/",
@@ -28,6 +28,10 @@ export const router = createBrowserRouter([
     {
         path:"/quiz/feedback",
         element: <QuizFeedback/>
+    },
+    {
+        path:"/hist/feedback",
+        element: <HistFeedback />
     },
     {
         path: "/config",

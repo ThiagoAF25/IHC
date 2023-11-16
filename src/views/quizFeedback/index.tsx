@@ -1,7 +1,7 @@
 import { Box, Button, Typography} from '@mui/material';
 import { Link} from 'react-router-dom';
 import './style.css'
-import { fontVar, sizeVar, quizVar, setQuizVar } from '../../App';
+import { fontVar, sizeVar} from '../../App';
 import { questoes, QuizA, QuizB, QuizC, QuizD, QuizR, explicacaoQuiz} from "../quiz/questoes"
 import { indice, resp} from "../quiz"
 
