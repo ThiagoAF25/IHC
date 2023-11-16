@@ -15,24 +15,29 @@ export const QuizFeedback = () => {
                 Voltar
             </Button>
             <Box className="containerQuiz">
-                <Box className="perguntaQuiz" style={{ marginTop: "15px", marginLeft: "10px"}}>
-                    <Typography fontSize={sizeVar*1.5}  color="white" fontFamily={fontVar}>{questoes[indice]}</Typography>
+                <Box className="perguntaQuiz" style={{ marginTop: "15px", marginLeft: "15px", marginRight: "15px"}}>
+                    <Typography fontSize={sizeVar*1.5}  color="black" fontFamily={fontVar}>{questoes[indice]}</Typography>
+                    {resp === gabarito && <Typography fontStyle={'italic'} fontSize={sizeVar*1.5} color="#03AC13" fontFamily={fontVar} style={{marginTop: "25px"}}>Parabéns, você acertou!</Typography>}
+                    {resp !== gabarito && <Typography fontStyle={'italic'} fontSize={sizeVar*1.5} color="#D32B55" fontFamily={fontVar} style={{marginTop: "25px"}}>Você errou! Explicação: {explicacaoQuiz[indice]}</Typography>}
                 </Box>
                 <Box className="buttonQuiz">
-                    <div className="divResp" style={{ fontFamily: fontVar, fontSize: sizeVar, marginBottom: "32px", backgroundColor: ("A" === gabarito ? "#008000" :  "#FF0000"), padding: "15px", color: "white" }}>
+                    <div className="divResp" style={{ borderRadius: "15px",fontFamily: fontVar, fontSize: sizeVar, marginBottom: "16px", backgroundColor: ("A" === gabarito ? "#03AC13" :  "#D32B55"), padding: "15px", color: "white" }}>
                         {QuizA[indice]}
                     </div>
-                    <div className="divResp" style={{ fontFamily: fontVar, fontSize: sizeVar, marginBottom: "32px", backgroundColor: ("B" === gabarito ? "#008000" :  "#FF0000"), padding: "15px", color: "white" }}>
+                    <div className="divResp" style={{ borderRadius: "15px",fontFamily: fontVar, fontSize: sizeVar, marginBottom: "16px", backgroundColor: ("B" === gabarito ? "#03AC13" :  "#D32B55"), padding: "15px", color: "white" }}>
                         {QuizB[indice]}
                     </div>
-                    <div className="divResp" style={{ fontFamily: fontVar, fontSize: sizeVar, marginBottom: "32px", backgroundColor: ("C" === gabarito ? "#008000" :  "#FF0000"), padding: "15px", color: "white" }}>
+                    <div className="divResp" style={{ borderRadius: "15px", fontFamily: fontVar, fontSize: sizeVar, marginBottom: "16px", backgroundColor: ("C" === gabarito ? "#03AC13" :  "#D32B55"), padding: "15px", color: "white" }}>
                         {QuizC[indice]}
                     </div>
-                    <div className="divResp" style={{ fontFamily: fontVar, fontSize: sizeVar, marginBottom: "32px", backgroundColor: ("D" === gabarito ? "#008000" :  "#FF0000"), padding: "15px", color: "white" }}>
+                    <div className="divResp" style={{ borderRadius: "15px", fontFamily: fontVar, fontSize: sizeVar, marginBottom: "16px", backgroundColor: ("D" === gabarito ? "#03AC13" :  "#D32B55"), padding: "15px", color: "white" }}>
                         {QuizD[indice]}
                     </div>
                 </Box>
             </Box>
+            <Button component={Link} to="/quiz" variant="contained" color="primary" style={{ marginTop: "30px", left: "85%"}}>    
+                Próxima questão
+            </Button>
         </div>
     )
 }

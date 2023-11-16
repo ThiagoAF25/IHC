@@ -20,7 +20,7 @@ export const Home = () => {
                     <Button component={Link} to="/quiz" variant="contained" color="primary" className="button" style={{ fontFamily: fontVar, fontSize:sizeVar, marginBottom: "32px" }}>
                         Modo Quiz
                     </Button>
-                    <Button variant="contained" color="primary" className="button" style={{fontFamily: fontVar, fontSize:sizeVar, marginBottom: "32px" }}>
+                    <Button component={Link} to="/hist" variant="contained" color="primary" className="button" style={{fontFamily: fontVar, fontSize:sizeVar, marginBottom: "32px" }}>
                         Modo História
                     </Button>
                     <Button component={Link} to="/config" variant="contained" color="primary" className="button" style={{fontFamily: fontVar, fontSize:sizeVar, marginBottom: "32px" }}>

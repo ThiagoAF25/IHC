@@ -51,13 +51,13 @@ export const QuizD =   ["Entrar em contato com o banco",
 
 export const QuizR = ["A","B","C","D","C","A","B","C","D"]
 
-export const explicacaoQuiz = ["Uma agência bancária, nunca vai pedir para você clicar em um link.",
-    "Nunca conceda informações sigilosas para terceiros não confiavéis, uma pesquisa externa é necessaria",
-    "A receita federal não manda email para ninguém, logo, seria impossivel esse email ser legitmo. ",
+export const explicacaoQuiz = ["Uma agência bancária nunca vai pedir para você clicar em um link.",
+    "Nunca conceda informações sigilosas para terceiros não confiavéis, uma pesquisa externa é necessária",
+    "A receita federal não manda email para ninguém, logo, seria impossivel esse email ser legitmo.",
     "Infelizmente neste cenário você deve tentar confirmar por outra fonte externa.",
     "A empresa já deveria possuir essas informações. Confirmar o cliente por nome ou um código, deveria ser o suficiente.",
     "É sempre importante verificar o valor e a autenticidade do boleto.",
-    "Verifique se o vendedor é confiavel, analisar a review de vendedores, é mais que o suficiente para afirmar e legitmidade do vendedor",
+    "Verifique se o vendedor é confiavel, analisar a review de vendedores é mais que o suficiente para afirmar a legitmidade do vendedor.",
     "É mais normal do que parece as pessoas venderem produtos falsos na internet.",
     "Nunca divulgue informações como código de verificação por mensagens."
     ]

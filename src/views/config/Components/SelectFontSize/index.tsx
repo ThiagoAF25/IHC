@@ -29,7 +29,6 @@ const SelectFontSize: React.FC<SelectFontSizeProps> = ({ value, onChange }) => {
           <MenuItem value={16}>Pequeno</MenuItem>
           <MenuItem value={20}>Médio</MenuItem>
           <MenuItem value={24}>Grande</MenuItem>
-          <MenuItem value={28}>Extra Grande</MenuItem>
         </Select>
       </FormControl>
     </Box>
