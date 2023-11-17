@@ -1,7 +1,7 @@
 export const questoes = ["Você recebe uma mensagem no seu celular, afirmando ser o banco, e te avisa que uma transação bancaria ,que você não se recorda,foi realizada, e que caso você queria cancelar você deve clicar no link abaixo",
                          "Após escrever sua reclamação, no ReclameAqui, você recebe um email da empresa, falando que graças a sua péssima experiência você ganhou um cupom de desconto, para garantir esse desconto você deve confirmar suas informações",
                          "Você recebe um email da receita federal, explicando que caiu na falha fina, e pede para ligar para o seguinte número, para tentar resolver a situação.",
-                         "Você recebe uma mensagem no seu celular, afirmando ser de uma empresa, essa empresa está contratando, e está te oferencendo emprego se você acessar o site deles e colocar suas informações, para efetuar um cadrasto.",
+                         "Você recebe uma mensagem no seu celular, afirmando ser de uma empresa, essa empresa está contratando, e está te oferencendo emprego se você acessar o site deles e colocar suas informações, para efetuar um cadastro.",
                          "Você recebe uma ligação, afirmando que você ganhou um prémio especial da empresa Y, essa empresa apenas precisa corfirmar seu nome e informações.",
                          "Você recebe por email um boleto de uma compra que você fez, porém você nota que o valor da compra é maior do que o que deveria, qual a primeira coisa que você faz?",
                          "Você estava muito interessado em comprar uma Z, então você foi no mercado livre e viu uma pessoas vendendo uma por cerca de 70% do preço, qual a primeira coisa que você faz?",

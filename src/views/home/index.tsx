@@ -14,7 +14,7 @@ export const Home = () => {
             </Box>
             <Box className="container">
                 <Box className="Text">
-                    <Typography fontSize={sizeVar*1.5}  color="white" fontFamily={fontVar}>Um jogo educativo a fim de concientizar todos os públicos sobre a segurança na Internet.</Typography>
+                    <Typography fontSize={sizeVar*1.5}  color="white" fontFamily={fontVar}>Um jogo educativo a fim de conscientizar todos os públicos sobre a segurança na Internet.</Typography>
                 </Box>
                 <Box className="Buttons">
                     <Button component={Link} to="/quiz" variant="contained" color="primary" className="button" style={{ fontFamily: fontVar, fontSize:sizeVar, marginBottom: "32px" }}>
