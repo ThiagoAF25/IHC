@@ -31,8 +31,7 @@ export const Home = () => {
                     </Button>
                 </Box>
             </Box>
-            <Box className="Footer">
-            </Box>
+
         </div>
     )
 };
