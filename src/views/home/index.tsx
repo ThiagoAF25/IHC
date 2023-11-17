@@ -1,11 +1,10 @@
 import { Box, Button, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import './style.css'
-import { fontVar, sizeVar, setQuizVar, ResetHistQuest } from '../../App';
+import { fontVar, sizeVar, ResetHistQuest } from '../../App';
 
 
 export const Home = () => {
-    setQuizVar(0);
     ResetHistQuest();
     return (
         <div className="home">

@@ -1,18 +1,21 @@
 import { Box, Button, Typography} from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
 import './style.css'
-import { fontVar, sizeVar, quizVar, setQuizVar } from '../../App';
-import { questoes, QuizA, QuizB, QuizC, QuizD} from "./questoes"
+import { fontVar, sizeVar, quizTotal, setQuizTotal, setQuizAcertos, quizAcertos } from '../../App';
+import { questoes, QuizA, QuizB, QuizC, QuizD, QuizR} from "./questoes"
 
 
 export let resp: string = '';
 export let indice: number = 0;
 export const Quiz = () => {
     const navigate = useNavigate();
-
+    var gabarito = '';
     const handleResposta = () => {
-        setQuizVar(quizVar + 1);
-        
+        setQuizTotal(quizTotal + 1);
+        gabarito = QuizR[indice];
+        if (resp === gabarito){
+            setQuizAcertos(quizAcertos+1);
+        }
         navigate('/quiz/feedback');
     };
 

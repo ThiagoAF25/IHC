@@ -35,7 +35,7 @@ export const QuizFeedback = () => {
                     </div>
                 </Box>
             </Box>
-            <Button component={Link} to="/quiz" variant="contained" color="primary" style={{ marginTop: "30px", left: "85%"}}>    
+            <Button component={Link} to="/quiz" variant="contained" color="primary" style={{ margin: "10px",left: "80%"}}>    
                 Próxima questão
             </Button>
         </div>

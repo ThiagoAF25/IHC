@@ -13,4 +13,11 @@
     border-style: solid;
     border-width: 1px;
     border-color: #CCE5FF;
+    display: flex;
+    flex-direction: column;
 }
+
+    
+
+
+    
